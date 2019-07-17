@@ -21,12 +21,41 @@ namespace myStocker
         {
 
         }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+        public delegate void ShowMessage();//创建一个代理 
+        public void ShowTextBox(TextBox tb, String txt)
         {
+            if (tb.InvokeRequired)
+            {
+                ShowMessage msg;
+                msg = () =>
+                {
+                    tb.Text = txt;
+                };
+                tb.Invoke(msg);
+                return;
+            }
+            else
+            {
+                tb.Text = txt;
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            toolStripButton2.Enabled = true;
             userControl11.timer1.Start();
             userControl12.timer1.Start();
             userControl13.timer1.Start();
+            toolStripButton1.Enabled = false;
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            toolStripButton1.Enabled = true;
+            userControl11.timer1.Stop();
+            userControl12.timer1.Stop();
+            userControl13.timer1.Stop();
+            toolStripButton2.Enabled = false;
         }
     }
 }

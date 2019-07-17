@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace myStocker
 {
@@ -16,13 +17,17 @@ namespace myStocker
         {
             InitializeComponent();
         }
+        
         public System.Timers.Timer timer1 = new System.Timers.Timer(10);
         private List<string> items = new List<string>();
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            listView1.HeaderStyle = ColumnHeaderStyle.None;
-            listView2.HeaderStyle = ColumnHeaderStyle.None;
+            listViewNF1.HeaderStyle = ColumnHeaderStyle.None;
+            listViewNF2.HeaderStyle = ColumnHeaderStyle.None;
             timer1.Elapsed += new System.Timers.ElapsedEventHandler(Timer1_TimesUp);
+            IniFiles ini = new IniFiles("setting.ini");
+            var rtn = ini.ReadString("History","code","");
+            comboBox1.Items.AddRange(rtn.Split(new char[] { ',' }));
         }
         private void Timer1_TimesUp(object sender, System.Timers.ElapsedEventArgs e)
         { 
@@ -31,8 +36,15 @@ namespace myStocker
                 timer1.Interval = 4000;
             }
             string _stkcode = Invoke(new Func<string>(() => { return comboBox1.Text; })).ToString();
-            var rtn = getStkInfo(_stkcode);
-            listDetails(listView1,listView2,label3,label4,label5,rtn);
+            if (_stkcode.Length == 6)
+            {
+                var rtn = getStkInfo(_stkcode);
+                listDetails(listViewNF1, listViewNF2, label1, label2, label3, rtn);
+            }
+            else
+            {
+                return;
+            }
         }
         private void listDetails(ListView lv1, ListView lv2, Label lb1, Label lb2, Label lb3, string[] rtn)
         {
@@ -119,6 +131,12 @@ namespace myStocker
                 codeNew = "sz" + _code;
             }
             return codeNew;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listViewNF1.Items.Clear();
+            listViewNF2.Items.Clear();
         }
     }
 }
