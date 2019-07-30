@@ -39,14 +39,14 @@ namespace myStocker
             if (_stkcode.Length == 6)
             {
                 var rtn = getStkInfo(_stkcode);
-                listDetails(listViewNF1, listViewNF2, label1, label2, label3, rtn);
+                listDetails(listViewNF1, listViewNF2, label1, label2, label3, label5, label7, label9, label10, label12, label14, rtn);
             }
             else
             {
                 return;
             }
         }
-        private void listDetails(ListView lv1, ListView lv2, Label lb1, Label lb2, Label lb3, string[] rtn)
+        private void listDetails(ListView lv1, ListView lv2, Label lb1, Label lb2, Label lb3, Label lb4, Label lb5, Label lb6, Label lb7, Label lb8, Label lb9, string[] rtn)
         {
             lv1.Invoke(new MethodInvoker(() =>
             {
@@ -95,7 +95,13 @@ namespace myStocker
 
             lb1.Invoke(new MethodInvoker(() => lb1.Text = rtn[1]));
             lb2.Invoke(new MethodInvoker(() => lb2.Text = rtn[3]));
-            lb3.Invoke(new MethodInvoker(() => lb3.Text = rtn[32]));
+            lb3.Invoke(new MethodInvoker(() => lb3.Text = rtn[32] + " %"));
+            lb4.Invoke(new MethodInvoker(() => lb4.Text = rtn[4]));
+            lb5.Invoke(new MethodInvoker(() => lb5.Text = rtn[5]));
+            lb6.Invoke(new MethodInvoker(() => lb6.Text = rtn[38] + " %"));
+            lb7.Invoke(new MethodInvoker(() => lb7.Text = rtn[34]));
+            lb8.Invoke(new MethodInvoker(() => lb8.Text = rtn[33]));
+            lb9.Invoke(new MethodInvoker(() => lb9.Text = rtn[43]+" %"));
         }
         private string reString(string _txt)
         {
