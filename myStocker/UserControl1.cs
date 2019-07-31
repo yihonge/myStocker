@@ -144,5 +144,6 @@ namespace myStocker
             listViewNF1.Items.Clear();
             listViewNF2.Items.Clear();
         }
+
     }
 }

@@ -107,5 +107,10 @@ namespace myStocker
             g.Dispose();
             return newBitmap;
         }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
