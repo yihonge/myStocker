@@ -38,15 +38,14 @@
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.userControl13 = new myStocker.UserControl1();
-            this.userControl12 = new myStocker.UserControl1();
-            this.userControl11 = new myStocker.UserControl1();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.userControl14 = new myStocker.UserControl1();
+            this.userControl13 = new myStocker.UserControl1();
+            this.userControl12 = new myStocker.UserControl1();
+            this.userControl11 = new myStocker.UserControl1();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -56,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -64,10 +62,10 @@
             this.statusStrip1.Font = new System.Drawing.Font("方正兰亭黑Pro Global", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 440);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 444);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1188, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1185, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -85,7 +83,7 @@
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 27);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1188, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1185, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -116,7 +114,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1188, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1185, 27);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -137,7 +135,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1188, 388);
+            this.tabControl1.Size = new System.Drawing.Size(1185, 392);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -149,38 +147,10 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1180, 358);
+            this.tabPage1.Size = new System.Drawing.Size(1177, 362);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // userControl13
-            // 
-            this.userControl13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl13.Location = new System.Drawing.Point(782, 8);
-            this.userControl13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.userControl13.Name = "userControl13";
-            this.userControl13.Size = new System.Drawing.Size(386, 342);
-            this.userControl13.TabIndex = 2;
-            // 
-            // userControl12
-            // 
-            this.userControl12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl12.Location = new System.Drawing.Point(392, 8);
-            this.userControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.userControl12.Name = "userControl12";
-            this.userControl12.Size = new System.Drawing.Size(384, 342);
-            this.userControl12.TabIndex = 1;
-            // 
-            // userControl11
-            // 
-            this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl11.Location = new System.Drawing.Point(3, 8);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(383, 342);
-            this.userControl11.TabIndex = 0;
-            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
             // tabPage2
             // 
@@ -191,7 +161,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1180, 358);
+            this.tabPage2.Size = new System.Drawing.Size(1177, 362);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -228,29 +198,47 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.userControl14);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1180, 358);
+            this.tabPage3.Size = new System.Drawing.Size(1177, 362);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // userControl14
+            // userControl13
             // 
-            this.userControl14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl14.Location = new System.Drawing.Point(6, 7);
-            this.userControl14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.userControl14.Name = "userControl14";
-            this.userControl14.Size = new System.Drawing.Size(407, 368);
-            this.userControl14.TabIndex = 0;
+            this.userControl13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl13.Location = new System.Drawing.Point(782, 8);
+            this.userControl13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.userControl13.Name = "userControl13";
+            this.userControl13.Size = new System.Drawing.Size(386, 342);
+            this.userControl13.TabIndex = 2;
+            // 
+            // userControl12
+            // 
+            this.userControl12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl12.Location = new System.Drawing.Point(392, 8);
+            this.userControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(384, 342);
+            this.userControl12.TabIndex = 1;
+            // 
+            // userControl11
+            // 
+            this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl11.Location = new System.Drawing.Point(3, 8);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(383, 342);
+            this.userControl11.TabIndex = 0;
+            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 462);
+            this.ClientSize = new System.Drawing.Size(1185, 466);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
@@ -273,7 +261,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,7 +285,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPage3;
-        private UserControl1 userControl14;
     }
 }
 

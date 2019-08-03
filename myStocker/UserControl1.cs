@@ -20,12 +20,13 @@ namespace myStocker
         
         public System.Timers.Timer timer1 = new System.Timers.Timer(10);
         private List<string> items = new List<string>();
+        private string ini_path = System.Environment.CurrentDirectory + "//setting.ini";
         private void UserControl1_Load(object sender, EventArgs e)
         {
             listViewNF1.HeaderStyle = ColumnHeaderStyle.None;
             listViewNF2.HeaderStyle = ColumnHeaderStyle.None;
             timer1.Elapsed += new System.Timers.ElapsedEventHandler(Timer1_TimesUp);
-            IniFiles ini = new IniFiles("setting.ini");
+            IniFiles ini = new IniFiles(ini_path);
             var rtn = ini.ReadString("History","code","");
             comboBox1.Items.AddRange(rtn.Split(new char[] { ',' }));
         }
